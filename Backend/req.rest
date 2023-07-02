@@ -1,0 +1,63 @@
+###
+GET http://localhost:7008/kosakata
+
+###
+GET http://localhost:7008/users
+
+###
+POST http://localhost:7008/users
+Content-Type: application/json
+
+{
+    "name": "Kirom",
+    "email": "akirom@gmail.com",
+    "password": "kirom1234",
+    "confPassword": "kirom1234",
+    "image": "",
+    "role": "student"
+}
+
+###
+POST  http://localhost:7008/users
+Content-Type: application/json
+
+{
+    "name": "manggis",
+    "file": "admin@gmail.com",
+   
+   
+}
+###
+PATCH http://localhost:7008/users/53f55527-519c-40bd-b868-f8dcdd837ca3
+Content-Type: application/json
+
+{
+    "name": "Kirom",
+    "email": "akirom@gmail.com",
+    "password": "kirom1234",
+    "confPassword": "kirom1234",
+    "role": "student"
+}
+
+###
+POST http://localhost:7008/login
+Content-Type: application/json
+
+{
+    "email": "akirom@gmail.com",
+    "password": "kirom1234"
+}
+
+
+###
+GET http://localhost:7008/me
+
+###
+
+POST http://localhost:7008/logOut
+Content-Type: application/json
+
+{
+    "email": "akirom@gmail.com",
+    "password": "kirom1234"
+}
